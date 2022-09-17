@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useToDo } from "../../providers/toDos";
 import { useState } from "react";
 import { Container } from "./style";
+import { AiFillCloseCircle } from "react-icons/ai";
 const AddTodo = () => {
   const { createToDo, openModal, setOpenModal } = useToDo();
   const [userToken] = useState(localStorage.getItem("@token"));
@@ -51,6 +52,15 @@ const AddTodo = () => {
                 </div>
                 <button type="submit">Criar</button>
               </section>
+              <p
+                className=""
+                onClick={() => {
+                  setOpenModal(false);
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                <AiFillCloseCircle />
+              </p>
             </form>
           </div>
         </Container>

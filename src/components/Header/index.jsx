@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Container } from "./style";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -11,15 +10,13 @@ const Header = () => {
       <h1>
         do<span>.</span>it
       </h1>
-      <nav>
-        <Link to="/perfil">Perfil</Link>
-      </nav>
+
       <button onClick={() => setOpenModal(true)}>Adicionar tarefa</button>
       <button
         onClick={() => {
           localStorage.clear();
-          navigate("/");
           toast.success("Logout realizado com sucesso, redirecionando...");
+          navigate("/");
         }}
       >
         Sair

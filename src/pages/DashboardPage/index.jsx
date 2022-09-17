@@ -3,7 +3,6 @@ import AddTodo from "../../components/AddTodo";
 import Header from "../../components/Header";
 import ListTodo from "../../components/ListToDos";
 import { useToDo } from "../../providers/toDos";
-import { Container } from "./style";
 
 const DashboardPage = () => {
   const { getAllToDo, listToDo } = useToDo();
@@ -15,7 +14,6 @@ const DashboardPage = () => {
   return (
     <>
       <Header />
-
       <AddTodo />
       <ListTodo toDos={listToDo} />
     </>

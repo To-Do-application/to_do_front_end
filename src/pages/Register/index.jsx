@@ -8,7 +8,8 @@ import svgLogin from "../../assets/login.svg";
 import { useUser } from "../../providers/users";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { BsPersonCheck } from "react-icons/bs";
+import { GrUserSettings } from "react-icons/gr";
 const LoginPage = () => {
   const { userRegister, verifyUserAuthenticated, isLoggedIn } = useUser();
 
@@ -65,7 +66,7 @@ const LoginPage = () => {
           </p>
           <div>
             <span>
-              <HiOutlineMail />
+              <BsPersonCheck />
             </span>
             <input
               type="text"
@@ -79,7 +80,7 @@ const LoginPage = () => {
           </p>
           <div>
             <span>
-              <HiOutlineMail />
+              <BsPersonCheck />
             </span>
             <input
               type="text"
@@ -93,7 +94,7 @@ const LoginPage = () => {
           </p>
           <div>
             <span>
-              <HiOutlineMail />
+              <GrUserSettings />
             </span>
             <input
               type="text"

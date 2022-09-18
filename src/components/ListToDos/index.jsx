@@ -4,7 +4,7 @@ import { Container } from "./style";
 const ListTodo = ({ toDos }) => {
   return (
     <Container>
-      {toDos.length > 0 ? (
+      {toDos && toDos.length > 0 ? (
         toDos.map((e) => <ToDo toDo={e} />)
       ) : (
         <h3>Voce ainda não tem tarefas</h3>

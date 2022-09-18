@@ -18,8 +18,9 @@ export const Container = styled.div`
     margin-bottom: 30px;
   }
   .form-login form {
-    width: 50%;
+    width: 90%;
     max-width: 340px;
+    margin-bottom: 20px;
   }
   form div {
     padding: 20px;

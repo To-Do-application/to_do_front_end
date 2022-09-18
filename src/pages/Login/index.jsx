@@ -74,7 +74,7 @@ const LoginPage = () => {
           </div>
           <button type="submit">Entrar</button>
         </form>
-        <p>
+        <p className="go-register">
           Ainda não possui cadastro? Clique{" "}
           <span onClick={() => navigate("/register")} className="redirect-span">
             aqui
